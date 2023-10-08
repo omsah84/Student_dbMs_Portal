@@ -7,11 +7,11 @@ export default function Login(props) {
   
 
   const onCLickLoginIn = () => {
-    setCnt(false);
+    setCnt(!cnt);
   }
 
   const onClickSignup = () => {
-    setCnt(true);
+    setCnt(!cnt);
   }
 
   return (

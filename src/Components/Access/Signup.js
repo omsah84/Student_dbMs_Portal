@@ -10,11 +10,11 @@ export default function Signup(props) {
   let [password, setPassword] = useState('');
 
   const onCLickLoginIn = () => {
-    setCnt(true);
+    setCnt(!cnt);
   }
 
   const onClickSignup = () => {
-    setCnt(false);
+    setCnt(!cnt);
 
   }
 
