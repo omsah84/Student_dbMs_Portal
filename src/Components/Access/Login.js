@@ -3,7 +3,8 @@ import Styled from './Login.module.scss'
 import Signup from './Signup';
 
 export default function Login(props) {
-  const [cnt, setCnt] = useState(false);
+  let [cnt, setCnt] = useState(false);
+  
 
   const onCLickLoginIn = () => {
     setCnt(false);

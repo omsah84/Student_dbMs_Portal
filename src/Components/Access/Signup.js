@@ -4,7 +4,7 @@ import Login from './Login';
 
 
 export default function Signup(props) {
-  const [cnt, setCnt] = useState(false);
+  let [cnt, setCnt] = useState(false);
   let [userName, setUserName] = useState('');
   let [email, setEmail] = useState('');
   let [password, setPassword] = useState('');
@@ -28,19 +28,19 @@ export default function Signup(props) {
           <div className={Styled.container}>
             <div className={Styled.label}>
               <label className={Styled.heading} >Roll No</label><br />
-              <input className={Styled.input} type='text' onChange={setUserName((e) => e.target.value)} value={userName} />
+              <input className={Styled.input} type='text'  value={userName} />
             </div>
             <div className={Styled.label}>
               <label className={Styled.heading} >Email</label><br />
-              <input className={Styled.input} type='email' onChange={setEmail((e) => e.target.value)} value={email} />
+              <input className={Styled.input} type='email' value={email} />
             </div>
             <div className={Styled.label}>
               <label className={Styled.heading} >Password </label><br />
-              <input className={Styled.input} type='password' onChange={setPassword((e) => e.target.value)} value={password} />
+              <input className={Styled.input} type='password' value={password} />
             </div>
             <div >
-              <button className={Styled.submit} onClick={onCLickLoginIn}>Go Back</button><br />
               <button className={Styled.submit} onClick={onClickSignup} >Sign up</button>
+              <button className={Styled.submit} onClick={onCLickLoginIn}>Go Back</button><br />
             </div>
           </div>
         </div>
