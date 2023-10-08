@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import Styled from './Signup.module.scss'
-import { app } from './Firebase';
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import Login from './Login';
 
 const auth = getAuth(app);
@@ -19,15 +17,6 @@ export default function Signup(props) {
   const onClickSignup = () => {
     setCnt(false);
 
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((value) => {
-        console.log(value);
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // ..
-      });
   }
 
   return (
