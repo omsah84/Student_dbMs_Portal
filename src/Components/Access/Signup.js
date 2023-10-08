@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Styled from './Signup.module.scss'
 import Login from './Login';
 
-const auth = getAuth(app);
 
 export default function Signup(props) {
   const [cnt, setCnt] = useState(false);
