@@ -14,7 +14,7 @@ export default function Signup(props) {
   }
 
   const onClickSignup = () => {
-    setCnt(!cnt);
+    // setCnt(!cnt);
 
   }
 
