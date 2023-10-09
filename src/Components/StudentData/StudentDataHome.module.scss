@@ -1,0 +1,39 @@
+.studentHome{
+    background-color: rgb(255, 248, 248);
+    margin: 20px auto;
+    width: 75%;
+    // text-align: center;
+    border-radius:5px;
+}
+
+.heading{
+    text-align: center;
+}
+
+.btnGroup{
+    text-align: center;
+}
+
+.btn{
+    width: 10rem;
+    height: 40px;
+    border-radius: 40px;
+    margin: 10px;
+    // background-color: blue;
+    background-color: rgb(86, 86, 150);
+    color: white;
+    font-size: 1rem;
+}
+
+.btn:hover{
+        background-color: blue;
+
+}
+
+@media (max-width:800px) {
+    .studentHome{
+        
+        width: 90%;
+       
+    }
+}
