@@ -7,8 +7,8 @@ export default function Home() {
             <h2 className={Style.heading}> SRI VENKATESWARA COLLEGE OF ENGINEERING AND TECHNOLOGY CHITTOOR</h2>
             <div className={Style.Home}>
                 <div className={Style.container}>
-                    <Link to='loginS'> <button type='button' className={Style.btn} >Student</button> </Link>
-                    <Link to='loginC' > <button type='button' className={Style.btn}>Coordinator</button></Link>
+                    <Link to='StudentLogin'> <button type='button' className={Style.btn} >Student</button> </Link>
+                    <Link to='CoordinatorLogin' > <button type='button' className={Style.btn}>Coordinator</button></Link>
                 </div>
             </div>
             <Outlet />

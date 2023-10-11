@@ -1,5 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Color+Emoji&family=Roboto:wght@400;500&display=swap');
 
+.container{
+    margin-top: 30px;
+    // width: 600px;
+    // background-color: red;
+    border-radius: 8px;
+}
+
+.heading1{
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    .title{
+        color: white;
+        padding: 10px;
+    }
+}
+
+.btnGroup{
+    // background-color: green;
+    text-align: center;
+}
+.btn{
+    width: fit-content;
+    color: black;
+    height: 34px;
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    text-align: center;
+    // margin-right: 6px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+}
+
+@media (max-width:450px) {
+    .btn{
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+.btn:hover{
+    border-bottom: 3px solid green;
+    margin-bottom: 3px;
+    color:green;
+}
+
+
+
 .home{
     // background-color: red;
     width:400px;

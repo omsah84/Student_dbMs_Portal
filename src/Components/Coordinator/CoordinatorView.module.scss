@@ -1,0 +1,18 @@
+.CoordinatorView{
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+.btnStyle{
+    background-color: gray;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.btnStyle:hover{
+    background-color: blue;
+    color:white;
+}

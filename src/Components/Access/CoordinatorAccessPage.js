@@ -1,21 +1,31 @@
 import React, { useState } from 'react'
-import Styled from './Login.module.scss'
-import Signup from './Signup';
+import Styled from './CoordinatorAccessPage.module.scss'
+import Signup from './CoordinatorSignup';
+import Login from './CoordinatorLogin';
 
-export default function Login(props) {
-  let [cnt, setCnt] = useState(false);
-  
 
-  const onCLickLoginIn = () => {
-    // setCnt(!cnt);
-  }
+export default function CoordinatorAccessPage(props) {
+  let [show,setShow] = useState(true);
 
-  const onClickSignup = () => {
-    setCnt(!cnt);
-  }
 
   return (
-    <div>
+    <div className={Styled.container}>
+      <div className={Styled.heading1}>
+        <h3 className={Styled.title}>COORDINATOR ACCESS</h3>
+      </div>
+      <div className={Styled.btnGroup}>
+        <button className={Styled.btn} onClick={() => {setShow(false)}}>Sign up</button>
+        <button className={Styled.btn} onClick={()=> { setShow(true)}} >Log in</button>
+      </div>
+      <div>
+        { show ?<>
+        <Login/>
+        </> : <>
+         <Signup/>
+         </>}
+      </div>
+
+{/* 
       {cnt ? <Signup title='Sign up' /> : <div className={Styled.home}>
         <div className={Styled.sub_home}>
           <div><h2 style={{
@@ -36,7 +46,7 @@ export default function Login(props) {
             </div>
           </div>
         </div>
-      </div>}
+      </div>} */}
 
     </div>
   )
